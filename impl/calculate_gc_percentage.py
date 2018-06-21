@@ -2,6 +2,8 @@
 Input file should be in FASTA format
 Returns DNA string with greater GC-percentage
 """
+
+
 def calculate_gc_percentage(data):
     keys = []
     label_idxes = []
