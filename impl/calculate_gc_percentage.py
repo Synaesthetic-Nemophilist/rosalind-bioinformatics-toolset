@@ -1,3 +1,7 @@
+"""
+Input file should be in FASTA format
+Returns DNA string with greater GC-percentage
+"""
 def calculate_gc_percentage(data):
     keys = []
     label_idxes = []
@@ -20,8 +24,6 @@ def calculate_gc_percentage(data):
     gc_dict = {}
     for k, v in gene_dict.items():
         gc_dict[k] = gc_percentage(v)
-
-    print(gc_dict)
 
     max_key = max(gc_dict, key=lambda k: gc_dict[k])
 

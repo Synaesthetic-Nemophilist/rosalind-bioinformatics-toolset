@@ -3,3 +3,4 @@ from transcribe_dna_to_rna import transcribe_dna_to_rna
 from complement_dna_strand import complement_dna_strand
 from generalized_fibonacci import generalized_fibonacci
 from calculate_gc_percentage import calculate_gc_percentage
+from count_point_mutations import count_point_mutations
