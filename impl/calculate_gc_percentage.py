@@ -1,3 +1,5 @@
+from utils import parse_fasta
+
 """
 Input file should be in FASTA format
 Returns DNA string with greater GC-percentage
@@ -5,23 +7,7 @@ Returns DNA string with greater GC-percentage
 
 
 def calculate_gc_percentage(data):
-    keys = []
-    label_idxes = []
-    values = []
-
-    removed_lines = data.split()
-
-    for i in range(len(removed_lines)):
-        if removed_lines[i].startswith('>'):
-            keys.append(removed_lines[i].strip('>'))
-            label_idxes.append(i)
-
-    label_idxes.append(len(removed_lines))  # append dummy index to terminate next loop
-
-    for i in range(len(label_idxes) - 1):
-        values.append(''.join(removed_lines[label_idxes[i] + 1:label_idxes[i + 1]]))
-
-    gene_dict = dict(zip(keys, values))
+    gene_dict = parse_fasta(data)
 
     gc_dict = {}
     for k, v in gene_dict.items():
