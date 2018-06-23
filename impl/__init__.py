@@ -5,3 +5,4 @@ from generalized_fibonacci import generalized_fibonacci
 from calculate_gc_percentage import calculate_gc_percentage
 from count_point_mutations import count_point_mutations
 from dominant_allele_probability import dominant_allele_probability
+from translate_rna_to_protein import translate_rna_to_protein

@@ -21,6 +21,8 @@ elif ex == '6':
     resultdata = count_point_mutations(data)  # 6. HAMM
 elif ex == '7':
     resultdata = dominant_allele_probability(data)  # 7. IPRB
+elif ex == '8':
+    resultdata = translate_rna_to_protein(data)  # 8. PROT
 
 
 
