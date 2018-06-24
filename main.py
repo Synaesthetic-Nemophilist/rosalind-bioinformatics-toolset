@@ -25,6 +25,8 @@ elif ex == '8':
     resultdata = translate_rna_to_protein(data)  # 8. PROT
 elif ex == '9':
     resultdata = find_motif_in_dna(data)  # 9. SUBS
+elif ex == '10':
+    resultdata = consensus_and_profile(data)  # 10. CONS
 
 
 
