@@ -27,6 +27,11 @@ elif ex == '9':
     resultdata = find_motif_in_dna(data)  # 9. SUBS
 elif ex == '10':
     resultdata = consensus_and_profile(data)  # 10. CONS
+elif ex == '11':
+    resultdata = mortal_fibonacci(data)  # 11. FIBD
+elif ex == '12':
+    resultdata = overlap_graph(data)  # 12. GRPH
+
 
 
 

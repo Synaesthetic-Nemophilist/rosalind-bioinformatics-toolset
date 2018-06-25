@@ -8,3 +8,5 @@ from dominant_allele_probability import dominant_allele_probability
 from translate_rna_to_protein import translate_rna_to_protein
 from find_motif_in_dna import find_motif_in_dna
 from consensus_and_profile import consensus_and_profile
+from mortal_fibonacci import mortal_fibonacci
+from overlap_graph import overlap_graph
